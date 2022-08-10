@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash/sudo bash
 mv influx.repo /etc/yum.repos.d/influx.repo
 yum install influxdb -y && yum install telegraf -y
 systemctl enable influxdb
