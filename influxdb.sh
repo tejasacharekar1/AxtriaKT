@@ -8,7 +8,7 @@ sudo systemctl enable telegraf.service
 sudo systemctl start telegraf.service
 sudo mv telegraf.conf /etc/telegraf/telegraf.conf
 sudo yum update -y && sudo amazon-linux-extras install docker -y
-sudo sudo service docker start && sudo systemctl enable docker
+sudo service docker start && sudo systemctl enable docker
 sudo usermod -a -G docker ec2-user
 sudo chmod 666 /var/run/docker.sock
 sudo systemctl restart telegraf && sudo systemctl restart influx
